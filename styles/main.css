@@ -1,0 +1,121 @@
+/* Colors 
+--------*/ 
+
+:root {
+--dream-pink: #c889bc;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box; }
+
+body{
+  background-image: url('../images/blue-sky.gif'); }
+
+.altar-grid{
+  display: grid;
+  width:100vw;
+  height:100vh;
+  grid-template-rows: 25% 1fr 25%;
+  grid-template-areas:
+  "air aab aab aab wtr"
+  "atp t-f t-f t-f atf"
+  "fir abw abw abw ear"; }
+
+.air{
+  grid-area: air; }
+
+.affirm-above{
+  display: flex;
+  direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: cursive;
+  color: gray;
+  align-items: top;
+  grid-area: aab; }
+
+.water{
+  grid-area: wtr; }
+
+.affirm-the-past{
+  display: flex;
+  direction: column;
+  justify-content: left;
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: cursive;
+  color: gray;
+  align-items: center;
+  grid-area: atp; }
+
+.the-future{
+  display: flex;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+  font-size: 3em;
+  color: var(--dream-pink);
+  grid-area: t-f; } 
+
+.affirm-the-future {
+  display: flex;
+  direction: column;
+  justify-content: right;
+  margin-right: 20px;
+  font-size: 2em;
+  font-family: cursive;
+  color: gray;
+  align-items: center;
+  grid-area: atf; }
+
+.fire{
+  grid-area: fir; }
+
+.affirm-below{
+  display: flex;
+  direction: column;
+  justify-content: center;
+  line-height: 1em;
+  font-size: 2em;
+  font-family: cursive;
+  color: gray;
+  align-items: flex-end;
+  grid-area: abw; }
+
+.earth{
+  grid-area: ear; }
+ 
+.symbol{
+  color: var(--dream-pink);
+  font-size: 2vh;
+  font-weight: bold; }
+
+.NW{
+ font-size: 1vh;
+ position: absolute;
+ top: 0;
+ left: 0; }
+
+.NE{
+  font-size: 1vh;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.SW{
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.SE{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
