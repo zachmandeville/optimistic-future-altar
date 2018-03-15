@@ -7,6 +7,7 @@ var ourFuture = [
   "the future is consensual",
   "the future is exciting",
   "the future is dreamfilled"
+  "the future is ballin'"
 ]
 
 var len = ourFuture.length;
@@ -26,9 +27,4 @@ function displayFuture () {
   }
 }
 
-//Hide Submission Box when the submission is clicked
-function success () {
-  var submitBox = document.getElementById('vision-submission')
-  submitBox.classList.toggle('hidden')
-}
 
