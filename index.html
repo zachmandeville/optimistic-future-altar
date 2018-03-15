@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="altar-grid">
-    <div class="air symbol NE">
+    <div class="symbol NE" id="air">
 <pre>
                                  _ .--.
                                 ( `    )
@@ -30,10 +30,11 @@
                      '=='
 </pre>
     </div>
-    <div class="affirm-above">
-      The Star
-    </div>
-    <div class="water symbol NW">
+
+    <!-- Write down the notion that guides you.  Your high ideal. -->
+    <div class="affirm-above"><p contenteditable=true>The Star</p></div>
+
+    <div class="symbol NW" id="water" >
 <pre>
                              000      00
                            0000000   0000
@@ -52,14 +53,30 @@
         / / / / / / / / / /
 </pre>
     </div>
-    <div class="affirm-the-past" contenteditable="true">Hermit</div>
+
+    <!-- Where are you coming from?  The events in your past? -->
+    <div class="affirm-the-past"><p contenteditable=true>Hermit</p></div>
+
+    <!-- The succession of our future visions-->
     <div class="the-future">
-      <p id="ourOptimisticFuture">
+      <p id="ourOptimisticFuture"></p>
+      <a class="add-your-own" href="#cover">add your vision</a>
     </div>
-    <div class="affirm-the-future" contenteditable="true">
-      Le Monde
+    <div id="cover">
+    <form id="vision-submission" method="post" action="http://briskforms.com/go/88e309acf4e527587241ad0b481fd463">
+      <div class="submission-fields">
+      <input type="text" name="your future vision" value="type your description of the future here">
+       <input type="submit" value="Send" onClick="success()">
+      </div>
+       <p>We'll receive, review, then add yr submission--so check back in a bit after!</p>
+      <a class="cancel" href="#">&times;</a>
+    </form>
     </div>
-    <div class="fire symbol SW">
+    <!-- What are you moving towards? -->
+    <div class="affirm-the-future"><p contenteditable=true>Le Monde</p></div>
+
+
+    <div class="symbol SW" id="fire" >
       <pre>
     (
     )\
@@ -73,10 +90,11 @@
   '.___.'
 </pre>
     </div>
-    <div class="affirm-below">
-      <p contenteditable="true">Strength</p>
-    </div>
-    <div class="earth symbol SE">
+
+    <!-- What are your roots?  The place already in you, from which all else springs? -->
+    <div class="affirm-below"><p contenteditable="true">Strength</p></div>
+    
+    <div class="symbol SE" id="earth">
        <pre>
  ---.____    ,/k.
   ___,---'  /  ih,__,-----.___
@@ -86,5 +104,9 @@
       </pre>
     </div>
   </div>
+<!-- 
+     Our Help Panel
+-->
+<div>
 </body>
 </html>

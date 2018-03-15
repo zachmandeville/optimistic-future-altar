@@ -15,6 +15,84 @@ body,html{
 body{
   background-image: url('../images/blue-sky.gif'); }
 
+#vision-submission{
+  display: flex;
+  z-index: 10;
+  background-color: #d7b6b6;
+  height: 200px;
+  width: 66%;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.submission-fields{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#cover{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%; }
+
+#cover:target {
+  display: flex; }
+
+#success{
+  display: none; }
+
+#success:target{
+  display: flex;;
+  height: 100%;
+  width: 100%;
+  background-color: #d7b6b6; 
+  z-index: 7; }
+  
+input[type=text]{
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
+  color: charcoal;
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: #d7b6b6;
+  font-size: 1.3em; }
+
+input[type=submit]{
+  font-size: 1em;
+  height: 50px;
+  width: 100px; }
+
+.cancel { 
+  display:block; 
+  position:absolute; 
+  z-index: 10;
+  top:3px; 
+  right:2px; 
+  color:black; 
+  height:30px; 
+  width:35px; 
+  font-size:2em; 
+  text-decoration:none; 
+  text-align:center; 
+  font-weight:bold; }
+
 .altar-grid{
   display: grid;
   width:100vw;
@@ -32,12 +110,18 @@ body{
   display: flex;
   direction: column;
   justify-content: center;
-  margin-top: 10px;
+  line-height: 1em;
   font-size: 2em;
   font-family: cursive;
   color: gray;
-  align-items: top;
+  align-items: flex-start;
   grid-area: aab; }
+
+.add-your-own{
+  text-decoration: none;
+  font-size: 0.5em;
+  font-style: italic;
+  color: gray; }
 
 .water{
   grid-area: wtr; }
@@ -46,16 +130,17 @@ body{
   display: flex;
   direction: column;
   justify-content: left;
+  align-items: center;
   margin-left: 20px;
+  line-height: 1em;
   font-size: 2em;
   font-family: cursive;
   color: gray;
-  align-items: center;
   grid-area: atp; }
 
 .the-future{
   display: flex;
-  direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: monospace;
@@ -89,22 +174,22 @@ body{
   align-items: flex-end;
   grid-area: abw; }
 
-.earth{
+#earth{
   grid-area: ear; }
  
 .symbol{
   color: var(--dream-pink);
-  font-size: 2vh;
+  font-size: 1vw;
   font-weight: bold; }
 
 .NW{
- font-size: 1vh;
+ font-size: 0.5vw;
  position: absolute;
  top: 0;
  left: 0; }
 
 .NE{
-  font-size: 1vh;
+  font-size: 0.5vw;
   position: absolute;
   top: 0;
   right: 0; }
@@ -119,3 +204,4 @@ body{
   bottom: 0;
   right: 0;
 }
+
